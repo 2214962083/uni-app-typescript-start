@@ -38,7 +38,8 @@
     "vue": "^2.6.10",
     "vue-class-component": "^6.3.2",
     "vue-property-decorator": "^8.0.0",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-module-decorators": "^0.11.0"
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.2.0",
@@ -54,7 +55,10 @@
     "@vue/cli-plugin-typescript": "^3.5.1",
     "@vue/cli-service": "^4.1.0",
     "babel-plugin-import": "^1.11.0",
+    "node-sass": "^4.13.0",
     "postcss-comment": "^2.0.0",
+    "sass-loader": "^8.0.0",
+    "sass-resources-loader": "^2.0.1",
     "typescript": "^3.0.0",
     "vue-template-compiler": "^2.6.10"
   },

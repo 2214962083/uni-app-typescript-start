@@ -1,35 +1,27 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2015",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
+    "emitDecoratorMetadata": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "experimentalDecorators":true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "isolatedModules": true,
     "sourceMap": true,
+    "pretty": false,
     "baseUrl": ".",
-    "types": [
-      "webpack-env",
-      "@dcloudio/types/uni-app"
-    ],
+    "types": ["node", "webpack-env", "vue/types", "@dcloudio/types", "./types"],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@app": ["./src"],
+      "@app/*": ["./src/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "exclude": [
-    "node_modules",
-    "unpackage",
-    "src/**/*.nvue"
-  ]
+  "exclude": ["node_modules", "unpackage", "src/**/*.nvue"]
+  //"include": ["src/**/*"]
 }

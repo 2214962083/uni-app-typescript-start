@@ -1,0 +1,46 @@
+@import './color.scss';
+
+$themes: (
+	default: (
+		themeColor: #fb7299,
+		themeColorDark: #fa5181,
+		pageBgColor: $light90,
+		bgTextColor: $light90,
+		textColor: $light40,
+		borderColor: $light80,
+		errorColor: #ED5565,
+		successColor: green,
+		boxShadow-right: 1px 0 30px rgba(0, 0, 0, .1),
+		boxShadow-left: -1px 0 30px rgba(0, 0, 0, .1),
+		boxShadow-top: 0 -1px 30px rgba(0, 0, 0, .1),
+		boxShadow-bottom: 0 1px 30px rgba(0, 0, 0, .1),
+	),
+	dark: (
+		themeColor: #fb7299,
+		themeColorDark: #fa5181,
+		pageBgColor: $light90,
+		bgTextColor: $light90,
+		textColor: $light40,
+		borderColor: $light80,
+		errorColor: #ED5565,
+		successColor: green,
+		boxShadow-right: 1px 0 30px rgba(0, 0, 0, .1),
+		boxShadow-left: -1px 0 30px rgba(0, 0, 0, .1),
+		boxShadow-top: 0 -1px 30px rgba(0, 0, 0, .1),
+		boxShadow-bottom: 0 1px 30px rgba(0, 0, 0, .1),
+	)
+);
+
+
+@mixin themed() {
+	@each $themeName, $themeContent in $themes {
+		$theme-map: map-get($themes, $themeName) !global;
+		.theme--#{$themeName} & {
+			@content;
+		}
+	}
+}
+
+@function th($key) {
+	@return map-get($theme-map, $key);
+}
