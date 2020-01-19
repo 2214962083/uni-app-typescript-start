@@ -1,0 +1,60 @@
+//明亮度
+//255
+$light100: #ffffff;
+//248
+$light90: #f8f8f8;
+//245
+$light85: #f5f5f5;
+//241
+$light81: #f1f1f1;
+//240
+$light80: #f0f0f0;
+//238
+$light75: #eeeeee;
+//221
+$light70: #dddddd;
+//204
+$light65: #cccccc;
+//170
+$light60: #aaaaaa;
+//136
+$light50: #888888;
+//102
+$light45: #666666;
+//85
+$light40: #555555;
+//51
+$light30: #333333;
+//0
+$light0: #000000;
+
+// color-ui 的内置颜色
+$red: #e54d42;
+$orange: #f37b1d;
+$yellow: #fbbd08;
+$olive: #8dc63f;
+$green: #39b54a;
+$cyan: #1cbbb4;
+$blue: #0081ff;
+$purple: #6739b6;
+$mauve: #9c26b0;
+$pink: #e03997;
+$brown: #a5673f;
+$grey: #8799a3;
+$gray: $light80;
+$black: $light30;
+$white: $light100;
+
+//暗透明
+$alpha-dark-99: rgba(0, 0, 0, 0.01);
+$alpha-dark-95: rgba(0, 0, 0, 0.05);
+$alpha-dark-92: rgba(0, 0, 0, 0.08);
+$alpha-dark-90: rgba(0, 0, 0, 0.1);
+$alpha-dark-85: rgba(0, 0, 0, 0.15);
+$alpha-dark-80: rgba(0, 0, 0, 0.2);
+$alpha-dark-70: rgba(0, 0, 0, 0.3);
+$alpha-dark-60: rgba(0, 0, 0, 0.4);
+$alpha-dark-50: rgba(0, 0, 0, 0.5);
+$alpha-dark-40: rgba(0, 0, 0, 0.6);
+//亮透明
+$alpha-light-85: rgba(255, 255, 255, 0.15);

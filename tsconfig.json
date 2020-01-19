@@ -12,6 +12,7 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "isolatedModules": true,
+    "allowJs": true,
     "sourceMap": true,
     "pretty": false,
     "baseUrl": ".",
@@ -22,6 +23,6 @@
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "exclude": ["node_modules", "unpackage", "src/**/*.nvue"]
+  "exclude": ["node_modules", "unpackage", "src/**/*.nvue", "dist", "./*.js"]
   //"include": ["src/**/*"]
 }

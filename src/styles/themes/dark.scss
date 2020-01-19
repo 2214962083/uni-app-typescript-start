@@ -1,0 +1,75 @@
+@import './color.scss';
+
+.theme-dark {
+  //亮度
+  //255
+  --light100: #{lighten($light0, 10%)};
+  //248
+  --light90: #{darken($light30, 20%)};
+  //245
+  --light85: #{darken($light30, 15%)};
+  //241
+  --light81: #{darken($light30, 11%)};
+  //240
+  --light80: #{darken($light30, 10%)};
+  //238
+  --light75: #{darken($light30, 5%)};
+  //221
+  --light70: #{$light30};
+  //204
+  --light65: #{$light45};
+  //170
+  --light60: #{$light40};
+  //136
+  --light50: #{$light50};
+  //102
+  --light45: #{$light65};
+  //85
+  --light40: #{$light60};
+  //51
+  --light30: #{$light70};
+  //0
+  --light0: #{darken($light100, 20%)};
+  //暗透明
+  --alpha-dark-99: #{$alpha-dark-99};
+  --alpha-dark-95: #{$alpha-dark-95};
+  --alpha-dark-92: #{$alpha-dark-92};
+  --alpha-dark-90: #{$alpha-dark-90};
+  --alpha-dark-85: #{$alpha-dark-85};
+  --alpha-dark-80: #{$alpha-dark-80};
+  --alpha-dark-70: #{$alpha-dark-70};
+  --alpha-dark-60: #{$alpha-dark-60};
+  --alpha-dark-50: #{$alpha-dark-50};
+  --alpha-dark-40: #{$alpha-dark-40};
+  //亮透明
+  --alpha-light-85: #{darken($alpha-light-85, 80%)};
+  //常规颜色
+  --red: #{$red};
+  --orange: #{$orange};
+  --yellow: #{$yellow};
+  --olive: #{$olive};
+  --green: #{$green};
+  --cyan: #{$cyan};
+  --blue: #{$blue};
+  --purple: #{$purple};
+  --mauve: #{$mauve};
+  --pink: #{$pink};
+  --brown: #{$brown};
+  --grey: #{$grey};
+  --gray: var(--light80%);
+  --black: var(--light30);
+  --white: var(--light100);
+  //具名颜色
+  --themeColor: #8c0000;
+  --themeColorDark: #660000;
+  --bgTextColor: var(--light90);
+  --bgColor: var(--light100);
+  --textColor: var(--light30);
+  --borderColor: var(--light80);
+  --errorColor: var(--red);
+  --successColor: var(--green);
+  --boxShadow-right: 1px 0 30px var(--alpha-dark-92);
+  --boxShadow-left: -1px 0 30px var(--alpha-dark-92);
+  --boxShadow-top: 0 -1px 30px var(--alpha-dark-92);
+  --boxShadow-bottom: 0 1px 30px var(--alpha-dark-92);
+}

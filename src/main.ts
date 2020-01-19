@@ -1,15 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import navBar from './components/nav-bar.vue'
-import './styles/color.scss'
+import MyNavBar from '@app/components/my-nav-bar.vue'
+import BasePage from '@app/components/base-page.vue'
 
 Vue.config.productionTip = false
-Vue.component('nav-bar', navBar)
+Vue.component('my-nav-bar', MyNavBar)
+Vue.component('base-page', BasePage)
 
 new App().$mount()
-
-// const app = new Vue({
-//   store,
-//   ...App
-// })
-// app.$mount()

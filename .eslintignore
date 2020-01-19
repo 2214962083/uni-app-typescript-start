@@ -1,0 +1,6 @@
+/test
+/dist
+/public
+/node_modules
+**/*.spec.ts
+**/*.css

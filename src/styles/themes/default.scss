@@ -1,0 +1,75 @@
+@import './color.scss';
+
+.theme-default {
+  //亮度
+  //255
+  --light100: #{$light100};
+  //248
+  --light90: #{$light90};
+  //245
+  --light85: #{$light85};
+  //241
+  --light81: #{$light81};
+  //240
+  --light80: #{$light80};
+  //238
+  --light75: #{$light75};
+  //221
+  --light70: #{$light70};
+  //204
+  --light65: #{$light65};
+  //170
+  --light60: #{$light60};
+  //136
+  --light50: #{$light50};
+  //102
+  --light45: #{$light45};
+  //85
+  --light40: #{$light40};
+  //51
+  --light30: #{$light30};
+  //0
+  --light0: #{$light0};
+  //暗透明
+  --alpha-dark-99: #{$alpha-dark-99};
+  --alpha-dark-95: #{$alpha-dark-95};
+  --alpha-dark-92: #{$alpha-dark-92};
+  --alpha-dark-90: #{$alpha-dark-90};
+  --alpha-dark-85: #{$alpha-dark-85};
+  --alpha-dark-80: #{$alpha-dark-80};
+  --alpha-dark-70: #{$alpha-dark-70};
+  --alpha-dark-60: #{$alpha-dark-60};
+  --alpha-dark-50: #{$alpha-dark-50};
+  --alpha-dark-40: #{$alpha-dark-40};
+  //亮透明
+  --alpha-light-85: #{darken($alpha-light-85, 80%)};
+  //常规颜色
+  --red: #{$red};
+  --orange: #{$orange};
+  --yellow: #{$yellow};
+  --olive: #{$olive};
+  --green: #{$green};
+  --cyan: #{$cyan};
+  --blue: #{$blue};
+  --purple: #{$purple};
+  --mauve: #{$mauve};
+  --pink: #{$pink};
+  --brown: #{$brown};
+  --grey: #{$grey};
+  --gray: var(--light80%);
+  --black: var(--light30);
+  --white: var(--light100);
+  //具名颜色
+  --themeColor: #8c0000;
+  --themeColorDark: #660000;
+  --bgTextColor: var(--light90);
+  --bgColor: var(--light100);
+  --textColor: var(--light30);
+  --borderColor: var(--light80);
+  --errorColor: var(--red);
+  --successColor: var(--green);
+  --boxShadow-right: 1px 0 30px var(--alpha-dark-92);
+  --boxShadow-left: -1px 0 30px var(--alpha-dark-92);
+  --boxShadow-top: 0 -1px 30px var(--alpha-dark-92);
+  --boxShadow-bottom: 0 1px 30px var(--alpha-dark-92);
+}

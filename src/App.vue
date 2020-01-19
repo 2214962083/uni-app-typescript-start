@@ -6,10 +6,17 @@ export default Vue.extend({
   mpType: 'app',
   store,
   onLaunch() {
-    Vue.prototype.$themeClass = 'theme--default'
+    /**
+     * 传递参数给自定义顶部导航条
+     */
     uni.getSystemInfo({
       success(e) {
-        const { statusBarHeight = 0, titleBarHeight = 0 } = e
+        console.log(e)
+        /**
+         * @param statusBarHeight 状态栏的高度，单位：px
+         * @param titleBarHeight 标题栏高度，单位：px
+         */
+        const {statusBarHeight = 20, titleBarHeight = 0} = e
 
         //小程序
         //#ifndef MP
@@ -24,7 +31,11 @@ export default Vue.extend({
         //微信小程序
         //#ifdef MP-WEIXIN
         Vue.prototype.$statusBarHeight = statusBarHeight
-        const { bottom = 0, top = 0 } = uni.getMenuButtonBoundingClientRect()
+        /**
+         * @param bottom 小程序右上角胶囊按钮下边界坐标，单位：px
+         * @param top 小程序右上角胶囊按钮上边界坐标，单位：px
+         */
+        const {bottom = 58, top = 26} = uni.getMenuButtonBoundingClientRect()
         Vue.prototype.$customBarHeight = bottom + top - statusBarHeight
         //#endif
 
@@ -33,17 +44,27 @@ export default Vue.extend({
         Vue.prototype.$statusBarHeight = statusBarHeight
         Vue.prototype.$customBarHeight = statusBarHeight + titleBarHeight
         //#endif
-      }
+      },
     })
   },
   onShow() {},
-  onHide() {}
+  onHide() {},
 })
 </script>
 
+<style lang="scss">
+// 自定义主题
+@import '~@app/styles/themes/index.scss';
+</style>
+
 <style>
 /*每个页面公共css */
-@import url('styles/color-ui-main.css');
-@import url('styles/color-ui-icon.css');
+
+/* color-ui */
 @import url('styles/color-ui-animation.css');
+@import url('styles/color-ui-icon.css');
+@import url('styles/color-ui-main-theme.css');
+
+/* 阿里 icon 库 */
+/* @import url('styles/iconfont.css'); */
 </style>
