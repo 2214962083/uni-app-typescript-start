@@ -33,7 +33,7 @@
     "@dcloudio/uni-mp-toutiao": "^2.0.0-24220191115011",
     "@dcloudio/uni-mp-weixin": "^2.0.0-24220191115011",
     "@dcloudio/uni-stat": "^2.0.0-24220191115011",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "flyio": "^0.6.2",
     "lodash": "^4.17.15",
     "reflect-metadata": "^0.1.13",
